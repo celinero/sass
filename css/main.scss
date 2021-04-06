@@ -1,0 +1,48 @@
+@import "partials/variables";
+@import "partials/home";
+
+
+body {
+  font-size: 40px;
+  color: blue;
+}
+
+
+@mixin main-background() {
+  font-size: 50px;
+  padding: 30px;
+  color: beige;
+}
+
+header {
+  h1 {
+    @include main-background();
+  }
+}
+
+footer {
+  p {
+    @include main-background();
+  }
+}
+
+@mixin msg-shared {
+  border: 2px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.success {
+  @include msg-shared;
+  color: green;
+}
+
+.error {
+  @include msg-shared;
+  color: red;
+}
+
+.warning {
+  @include msg-shared;
+  color: orange;
+}

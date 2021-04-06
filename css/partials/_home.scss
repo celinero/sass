@@ -1,0 +1,29 @@
+p {
+  color: $heading-hover;
+}
+
+body {
+  text-align: center;
+}
+
+section {
+  background-color: $section-bkgd-color;
+
+  h1 {
+    font-size: 60px;
+    }
+
+  h1:hover {
+    color: green;
+    }
+
+  p {
+    font-style: italic;
+  }
+}
+
+p {
+  span {
+    color: $span-highlight
+  }
+}
